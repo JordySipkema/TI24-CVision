@@ -26,6 +26,7 @@
 		68628152220ED24E003F1BD3 /* CVIS-2-TellenVanObjecten */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CVIS-2-TellenVanObjecten"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68628155220ED24E003F1BD3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		68628183220ED45F003F1BD3 /* Opdracht.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Opdracht.md; sourceTree = "<group>"; };
+		6866F5FF220EEB4A009EC686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		68628149220ED24E003F1BD3 = {
 			isa = PBXGroup;
 			children = (
+				6866F5FF220EEB4A009EC686 /* Info.plist */,
 				68628183220ED45F003F1BD3 /* Opdracht.md */,
 				68628154220ED24E003F1BD3 /* CVIS-2-TellenVanObjecten */,
 				68628153220ED24E003F1BD3 /* Products */,
@@ -239,7 +241,60 @@
 		6862815A220ED24E003F1BD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "/usr/local/Cellar/opencv/4.0.1/lib/**";
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/opencv/4.0.1/include/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/opencv/4.0.1/lib/**";
+				OTHER_LDFLAGS = (
+					"-I/usr/local/Cellar/opencv/4.0.1/include/opencv4/opencv",
+					"-I/usr/local/Cellar/opencv/4.0.1/include/opencv4",
+					"-L/usr/local/Cellar/opencv/4.0.1/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_line_descriptor",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_video",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core\n",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,7 +302,60 @@
 		6862815B220ED24E003F1BD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "/usr/local/Cellar/opencv/4.0.1/lib/**";
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/opencv/4.0.1/include/**";
+				LIBRARY_SEARCH_PATHS = "/usr/local/Cellar/opencv/4.0.1/lib/**";
+				OTHER_LDFLAGS = (
+					"-I/usr/local/Cellar/opencv/4.0.1/include/opencv4/opencv",
+					"-I/usr/local/Cellar/opencv/4.0.1/include/opencv4",
+					"-L/usr/local/Cellar/opencv/4.0.1/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dpm",
+					"-lopencv_face",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_line_descriptor",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_video",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_features2d",
+					"-lopencv_highgui",
+					"-lopencv_videoio",
+					"-lopencv_imgcodecs",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core\n",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
