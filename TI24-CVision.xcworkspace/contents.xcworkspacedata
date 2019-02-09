@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CVIS-1-ObjectenOpGrootte/CVIS-1-ObjectenOpGrootte.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CVIS-2-TellenVanObjecten/CVIS-2-TellenVanObjecten.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CVIS-3-ObjectTracking/CVIS-3-ObjectTracking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CVIS-4-VingersTellen/CVIS-4-VingersTellen.xcodeproj">
+   </FileRef>
+</Workspace>
